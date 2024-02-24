@@ -1,8 +1,10 @@
-<mat-toolbar color="primary">
-  <span class="navbar-brand">My Shop</span>
-  <span class="spacer"></span>
-  <button mat-button routerLink="order" routerLinkActive="active">TrackOrder</button>
-  <button mat-button routerLink="sign-up" routerLinkActive="activ">Ragister</button>
-  <button mat-button routerLink="login" routerLinkActive="activ">Login</button>
-</mat-toolbar>
+<div *ngIf="isAdmin">
+  <mat-toolbar color="primary">
+    <span class="navbar-brand">My Shop</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="order" routerLinkActive="active">TrackOrder</button>
+    <button mat-button routerLink="sign-up" routerLinkActive="activ">Ragister</button>
+    <button mat-button routerLink="login" routerLinkActive="activ">Login</button>
+  </mat-toolbar>
+</div>
 <router-outlet></router-outlet>
