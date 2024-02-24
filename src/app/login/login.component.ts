@@ -12,6 +12,7 @@ import { AuthService } from '../service/auth/auth.service';
 export class LoginComponent {
   loginForm!:FormGroup;
   hidePassword=true;
+  signupForm!: FormGroup; 
 
   constructor(private fb:FormBuilder,private snakbar:MatSnackBar,private authService:AuthService,private router:Router){
 
@@ -19,6 +20,11 @@ export class LoginComponent {
 
   ngOnInit():void{
     this.loginForm=this.fb.group({
+      email:[null,Validators.required,Validators.email],
+      password:[null,Validators.required],
+    })
+    this.signupForm=this.fb.group({
+      name:[null,Validators.required],
       email:[null,Validators.required,Validators.email],
       password:[null,Validators.required],
     })

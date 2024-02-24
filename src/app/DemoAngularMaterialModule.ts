@@ -19,6 +19,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { AngularSplitModule } from 'angular-split';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { CommonModule } from '@angular/common';
     MatDialogModule,
     ReactiveFormsModule ,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularSplitModule
 
   ],
 })

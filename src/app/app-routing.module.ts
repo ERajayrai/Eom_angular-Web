@@ -5,8 +5,9 @@ import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = 
 [
+  {path:'',component:LoginComponent},
   {path:'login',component:LoginComponent},
-  {path:'sign-up',component:SignupComponent},
+  // {path:'sign-up',component:SignupComponent},
   { path: 'customer', loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule) },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) }];
 
